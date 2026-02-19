@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Google form</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+    <body>
+        <div>
+            <h1>Student Registration Form</h1>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                <label for="name">Enter your name</label><br>
+                <input type ="text" id="name" name="name" placeholder="Full Name" size=50 maxlength="200" required autofocus><br><br>
+                <label for="email">Enter your email-id</label><br>
+                <input type="email" id="email" name="email"  size="50" required><br><br>
+                <label for="password">Enter the password</label><br>
+                <input type="password" id="password" name="password" minlength="8" size="50"><br><br>
+                <label for="dob">Enter DOB</label><br>
+                <input type="date" id="dob" name="dob" ><br><br>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Educational Details</legend>
+                <label for="gen">Select One option</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="Other" name="gender" value="Other">
+                <label for="Other">Other</label><br><br>
+                <label for="course">Select the course</label><br>
+                <select id="course" name="course" >
+                    <option value="Cs">Computer Engineering</option>
+                    <option value="it">IT</option>
+                    <option value="AIDS">Artifical Intellegence and Data  Science</option>
+                    <option value="mech">Mechanical</option>
+                </select><br><br>
+                <label >Select the Skills Known</label><br>
+                <input type="checkbox" id="html" name="skills" value="skills">
+                <label for="html">HTML</label><br> 
+                <input type="checkbox" id="CSS" name="skills" value="CSS">
+                <label for="CSS">CSS</label> <br> 
+                <input type="checkbox" id="JS" name="skills" value="JS">
+                <label for="JS">JS</label> <br>
+                <input type="checkbox" id="python" name="skills" value="python">
+                <label for="python">Python </label> <br>
+                <input type="checkbox" id="java" name="skills" value="Java">
+                <label for="java">Java</label> <br><br>
+                <label for="file">Upload Your resume</label><br>
+                <input type="file" id="file" name="resume">
+
+                </fieldset>
+                 
+                <fieldset>
+                   <legend>FeedBack</legend>
+                   <label for="txtarea" >Why do you want this course?</label><br>
+                   <textarea name="msg" id="txtarea"   rows="4" cols="100" placeholder="Type here "></textarea><br>
+                   <label for="rate">Rate your HTML  Knowledge</label><br>
+                   <input type="range" id="rate" name="rating" min="1" max="10" value="5">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Terms & Conditions</legend>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to terms and conditions</label><br><br>
+                    <button type="submit" >Submit </button>
+                    <button type="reset" >Reset</button>
+                </fieldset>
+               
+
+            </form>
+        </div>
+    </body>
+</html>

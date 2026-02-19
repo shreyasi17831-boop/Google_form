@@ -1,0 +1,80 @@
+/* Page */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #121212;
+    color: white;
+}
+
+/* Container */
+div {
+    width: 60%;
+    margin: 40px auto;
+}
+
+/* Heading */
+h1 {
+    background: linear-gradient(90deg, #ff4e50, #fc913a);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Cards */
+fieldset {
+    background: #1e1e1e;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 78, 80, 0.2);
+}
+
+/* Legend */
+legend {
+    color: #fc913a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Normal Inputs (NOT checkbox/radio) */
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+}
+
+/* Checkbox + Radio Fix */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
+/* Keep checkbox/radio and text in one line */
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #ff4e50, #fc913a);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
